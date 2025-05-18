@@ -68,7 +68,7 @@ const AddProductForm = () => {
         alert('Quantity cannot be negative');
         return;
       }
-      await axios.put(`/products/${product.id}/`, {
+      await axios.put(`https://project-5yfx.onrender.com/api/products/${product.id}/`, {
         ...product,
         quantity: newQty,
       });
