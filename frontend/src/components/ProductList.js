@@ -22,7 +22,7 @@ const ProductList = () => {
     if (!confirmed) return;
 
     try {
-      await axios.delete(`/products/${id}/`);
+      await axios.delete(`https://project-5yfx.onrender.com/api/products/${id}/`);
       alert('Product deleted successfully!');
       fetchProducts(); // refresh list
     } catch (error) {
